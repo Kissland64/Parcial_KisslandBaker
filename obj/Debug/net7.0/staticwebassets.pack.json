@@ -1,0 +1,77 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Parcial_KisslandBaker.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Parcial_KisslandBaker.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Kissl\\Documents\\Aplicada 1\\Parcial_KisslandBaker\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Parcial_KisslandBaker.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Parcial_KisslandBaker.props",
+      "PackagePath": "build\\Parcial_KisslandBaker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Parcial_KisslandBaker.props",
+      "PackagePath": "buildMultiTargeting\\Parcial_KisslandBaker.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Parcial_KisslandBaker.props",
+      "PackagePath": "buildTransitive\\Parcial_KisslandBaker.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

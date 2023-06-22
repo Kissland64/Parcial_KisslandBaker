@@ -1,0 +1,36 @@
+@page "/ConsultaGastos"
+@inject GastoBLL GastoBLL
+
+<table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Categoria</th>
+                <th>Monto</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var gasto in L_Gasto)
+            {
+                <tr>
+                    <td>@gasto.GastoId</td>
+                    <td>@gasto.Fecha.ToString("dd/MM/yy")</td>
+                    <td>@gasto.Categoria</td>
+                    <td>@gasto.Monto</td>
+                    <td>@gasto.Balance</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+@code {
+    
+    public List<Gasto> L_Gasto { get; set; } = new List<Gasto>();
+
+    protected override void OnInitialized()
+    {
+        L_Gasto = GastoBLL.Listar(l => true);
+    }
+}

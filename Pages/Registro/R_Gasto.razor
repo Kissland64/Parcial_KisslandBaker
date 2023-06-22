@@ -1,0 +1,113 @@
+@page "/RegistroGastos"
+@inject GastoBLL GastoBLL
+<EditForm model="Gastos" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+
+    <div class="container">
+        <div class="card shadow-lg">
+            <div class="card-header">
+                <h3>Registro de Gastos.</h3>
+            </div>
+            <div class=card-body>
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-4">
+                    <label>ID Gastos:</label>
+                    <div class="input-group mb-3">
+                        <InputNumber @bind-Value="gasto.GastoId" class="form-control"
+                            aria-describedby="BotonBuscar" />
+                        <button @onclick="Buscar" class="btn btn-outline-primary" type="button" id="BotonBuscar"><i
+                                class="oi oi-magnifying-glass" /></button>
+                    </div>
+                </div>
+                <div class="Fecha">
+                    <div class="mb-3">
+                        <label class="form-label" for="Fecha">Fecha:</label>
+                        <InputDate @bind-Value="gasto.Fecha" class="form-control" />
+                        <ValidationMessage For="@(() => gasto.Fecha)" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Categoria">Categoria:</label>
+                        <InputText @bind-Value="gasto.Categoria" class="form-control" />
+                        <ValidationMessage For="@(() => gasto.Categoria)" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Monto">Monto:</label>
+                        <InputNumber @bind-Value="gasto.Monto" class="form-control" />
+                        <ValidationMessage For="@(() => gasto.Monto)" />
+                    <div class="mb-3">
+                        <label class="form-label" for="Balance">Balance:</label>
+                        <InputNumber @bind-Value="gasto.Balance" class="form-control" />
+                        <ValidationMessage For="@(() => gasto.Balance)" />
+                    </div>
+
+
+                        <div class="card-footer d-flex justify-content-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary" @onclick="Nuevo">Nuevo <i
+                                        class="oi oi-file" /></button>
+                                <button type="submit" class="btn btn-outline-success">Guardar <i
+                                        class="oi oi-document" /></button>
+                                <button type="button" class="btn btn-outline-danger" @onclick="Eliminar">Eliminar <i
+                                        class="oi oi-trash" /></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</EditForm>
+
+@code {
+    public int GastoId { get; set; }
+    public Gasto gasto { get; set; } = new Gasto();
+    public void Buscar()
+    {
+        var gastoEncontrado = GastoBLL.Buscar(gasto.GastoId);
+        if (gastoEncontrado != null)
+        {
+            this.gasto = gastoEncontrado;
+        }
+    }
+
+    void Guardar()
+    {
+        if (!Validate())
+            if (Validate())
+                return;
+        if (GastoBLL.Guardar(gasto))
+        {
+            Nuevo();
+        }
+    }
+
+    void Nuevo()
+    {
+        gasto = new Gasto();
+    }
+
+    public void Eliminar()
+    {
+        Buscar();
+        if (GastoBLL.Eliminar(this.gasto))
+            if (Validate())
+            {
+                Nuevo();
+                if (GastoBLL.Eliminar(this.gasto))
+                {
+                    Nuevo();
+                }
+            }
+    }
+
+    bool Validate()
+    {
+        if (gasto.GastoId < 0)
+            return false;
+        if (gasto.Monto < 0)
+            return false;
+        if (gasto.Balance < 0)
+            return false;
+        else
+            return true;
+    }
+}
